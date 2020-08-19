@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Project;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -23,7 +24,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('components.home.home-projects');
+        $projects= Project::all();
+        return view('components.home.home-projects',['projects'=>$projects]); 
     }
     public function show_resume()
     {

@@ -54,7 +54,7 @@
 <section class="ftco-section about-section">
   <div class="container">
     <div class="row d-flex" data-scrollax-parent="true">
-      <div class="col-md-4 author-img" style="background-image: url(images/author-1.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
+      <div class="col-md-4 author-img" style="background-image: url(images/foto_perfil.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
       <div class="col-md-2"></div>
       <div class="col-md-6 wrap ftco-animate">
         <div class="about-desc">
@@ -130,20 +130,35 @@
       </div>
     </div>
     <div class="row no-gutters">
+
+@foreach ($projects as $countP=>$project)
+    
+
     <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-1.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
+      @if ($countP%2==0)
+      <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">          
+      @else
+      <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">
+      @endif
         <div class="icon d-flex text-center justify-content-center align-items-center">
           <span class="icon-search"></span>
         </div>
       </a>
+      @if ($countP%2==0)
       <div class="text">
-        <h4 class="subheading">Illustration</h4>
-        <h2 class="heading"><a href="portfolio-single.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="{{route('project')}}">View Project</a></p>
+      @else
+      <div class="text order-1">
+      @endif
+        <h4 class="subheading">{{$project->category}}</h4>
+        <h2 class="heading"><a href="portfolio-single.html">{{$project->title}}</a></h2>
+        <p>{{Str::limit($project->body,'50','...')}}</p>
+        <p><a href="{{route('project',$project->id)}}">View Project</a></p>
       </div>
     </div>
-    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+    
+    @endforeach
+
+    {{-- <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
       <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-2.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
         <div class="icon d-flex text-center justify-content-center align-items-center">
           <span class="icon-search"></span>
@@ -207,7 +222,7 @@
         <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
         <p><a href="#">View Project</a></p>
       </div>
-    </div>
+    </div> --}}
   </div>
   </div>
 </section>
