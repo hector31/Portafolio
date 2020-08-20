@@ -157,76 +157,14 @@
     </div>
     
     @endforeach
-
-    {{-- <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-2.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-        <div class="icon d-flex text-center justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      <div class="text order-1">
-        <h4 class="subheading">Application</h4>
-        <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="#">View Project</a></p>
-      </div>
-    </div>
-    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-3.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-        <div class="icon d-flex text-center justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      <div class="text">
-        <h4 class="subheading">Web Design</h4>
-        <h2 class="heading"><a href="portfolio-single.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="#">View Project</a></p>
-      </div>
-    </div>
-    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-4.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-        <div class="icon d-flex text-center justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      <div class="text order-1">
-        <h4 class="subheading">Application</h4>
-        <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="#">View Project</a></p>
-      </div>
-    </div>
-    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url('images/work-5.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-        <div class="icon d-flex text-center justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      <div class="text">
-        <h4 class="subheading">Animation</h4>
-        <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="#">View Project</a></p>
-      </div>
-    </div>
-    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-      <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url('images/work-6.jpg'); " data-scrollax=" properties: { translateY: '-30%'}">
-        <div class="icon d-flex text-center justify-content-center align-items-center">
-          <span class="icon-search"></span>
-        </div>
-      </a>
-      <div class="text order-1">
-        <h4 class="subheading">Branding</h4>
-        <h2 class="heading"><a href="portfoli-singleo.html">Even the all-powerful Pointing has no control</a></h2>
-        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text.</p>
-        <p><a href="#">View Project</a></p>
-      </div>
-    </div> --}}
   </div>
   </div>
 </section>
-
+<div class="d-flex">
+  <div class="mx-auto">
+    {{$projects->links()}} <!-- para la paginacion de los posts ya esta lista esta funcion-->
+  </div>
+</div>
 <section class="ftco-section ftco-counter" id="section-counter">
   <div class="container">
     <div class="row justify-content-center mb-5 pb-5">

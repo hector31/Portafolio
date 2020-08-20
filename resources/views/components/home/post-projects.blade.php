@@ -16,5 +16,6 @@
           <p>{{$project->body}}</p>
         </div>
       </div>
+      
     @endsection
 </x-home-master>

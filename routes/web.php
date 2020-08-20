@@ -17,4 +17,9 @@ Route::middleware('auth')->group(function(){
     Route::get('/admin/postsProject', 'ProjectController@index')->name('project.index');
     Route::get('/admin/postsProject/create', 'ProjectController@create')->name('project.create');
     Route::post('/admin/postsProject', 'ProjectController@store')->name('project.store');
+
+
+    Route::get('/admin/postsProject/{project}/edit', 'ProjectController@edit')->name('project.edit');
+    Route::delete('/admin/postsProject/{project}/destroy', 'ProjectController@destroy')->name('project.destroy');
+    Route::patch('/admin/postsProject/{project}/update', 'ProjectController@update')->name('project.update');
 });

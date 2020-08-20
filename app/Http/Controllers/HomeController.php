@@ -24,7 +24,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $projects= Project::all();
+        $projects= Project::paginate(5);
         return view('components.home.home-projects',['projects'=>$projects]); 
     }
     public function show_resume()
