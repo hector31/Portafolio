@@ -61,11 +61,15 @@
               <li><a href="{{route('contact')}}"><span><small>05</small>Contacto</span></a></li>
               @if(Auth::check())
                   <li class="nav-item">
-                      <a href="{{route('admin.index')}}" ><span><small>06</small>Admin</span></a>
+                      <a href="{{route('admin.index')}}" ><span><small>06</small>Administrador</span></a>
                   </li>
               @else
+                  
                   <li class="nav-item">
-                      <a href="/login" ><span><small>06</small>Administrador</span></a>
+                    <a href="/login" ><span><small>06</small>Ingresar</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="/register" ><span><small>07</small>Registrarse</span></a>
                   </li>
               @endif
             </ul>
@@ -101,14 +105,16 @@
           <div class="col-md-5 text-center">
             <div class="ftco-footer-widget mb-5">
               <ul class="ftco-footer-social list-unstyled">
-                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.instagram.com/hector_.31/"><span class="icon-instagram"></span></a></li>
+                <li class="ftco-animate"><a href="https://www.linkedin.com/in/hector-eduardo-narvaez-pantoja-40a415a0/"><span class="icon-linkedin"></span></a></li>
+                <li class="ftco-animate"><a href="https://github.com/hector31"><span class="icon-github"></span></a></li>
               </ul>
             </div>
             <div class="ftco-footer-widget">
               <h2 class="mb-3">Contacta me</h2>
-              <p class="h3 email"><a href="#">desarrollos@inghectornarvaez.com</a></p>
+              <p class="h3 email"><a  href="#">desarrollos@inghectornarvaez.com</a></p>
             </div>
           </div>
         </div>

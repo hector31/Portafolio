@@ -55,22 +55,25 @@
   <div class="container">
     <div class="row d-flex" data-scrollax-parent="true">
       <div class="col-md-4 author-img" style="background-image: url(images/foto_perfil.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
-      <div class="col-md-2"></div>
+      <div class="col-md-2 espacio-presentacion"></div>
       <div class="col-md-6 wrap ftco-animate">
         <div class="about-desc">
           <h1 class="bold-text">Sobre Mi</h1>
           <div class="p-5">
             <h2 class="mb-5">Hola! Hola mi nombre es Hector Narvaez</h2>
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
-            <p><a href="#">Checkout my resume</a></p>
+            <p><a href="#">Revisa mi hoja de vida</a></p>
             <ul class="ftco-footer-social list-unstyled mt-4">
-              <li><a href="#"><span class="icon-twitter"></span></a></li>
-              <li><a href="#"><span class="icon-facebook"></span></a></li>
-              <li><a href="#"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
+              <li><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
+              <li><a href="https://www.instagram.com/hector_.31/"><span class="icon-instagram"></span></a></li>
+              <li><a href="https://www.linkedin.com/in/hector-eduardo-narvaez-pantoja-40a415a0/"><span class="icon-linkedin"></span></a></li>
+              <li><a href="https://github.com/hector31"><span class="icon-github"></span></a></li>
+              
             </ul>
             <h5>Contacta me aqui!</h5>
-            <p>Correo: <a href="#">desarrollos@inghectornarvaez.com</a></p>
-            <p>Celular: <a href="#">3188715792</a></p>
+            <p>Correo: <a class="correom" href="#">desarrollos@inghectornarvaez.com</a></p>
+            <p>Celular: <a href="#">+57 3188715792</a></p>
           </div>
         </div>
       </div>
@@ -91,9 +94,11 @@
         <div class="media block-6 services p-3 py-4 d-block text-center">
           <div class="icon mb-3"><span class="icon-layers"></span></div>
           <div class="media-body">
-            <h3 class="heading">UI/UX Design</h3>
-            <h3 class="heading">Mobile App Design</h3>
-            <h3 class="heading">Responsive Design</h3>
+            <h3 class="heading">Frontend</h3>
+            <h3 class="heading">Diseño de paginas web</h3>
+            <h3 class="heading">Diseño de aplicaciones de escritorio</h3>
+            <h3 class="heading">Diseño de aplicaciones moviles</h3>
+            <h3 class="heading">Diseño Responsive</h3>
           </div>
         </div>      
       </div>
@@ -101,9 +106,9 @@
         <div class="media block-6 services p-3 py-4 d-block text-center">
           <div class="icon mb-3"><span class="icon-gears"></span></div>
           <div class="media-body">
-            <h3 class="heading">Product Strategy</h3>
-            <h3 class="heading">Design Sprints</h3>
-            <h3 class="heading">UX Strategy</h3>
+            <h3 class="heading">Backend</h3>
+            <h3 class="heading">Diseño de bases de datos</h3>
+            <h3 class="heading">Seguridad en manejo de datos</h3>
           </div>
         </div>      
       </div>
@@ -112,8 +117,8 @@
           <div class="icon mb-3"><span class="icon-code"></span></div>
           <div class="media-body">
             <h3 class="heading">HTML/CSS</h3>
-            <h3 class="heading">Prototyping</h3>
-            <h3 class="heading">User Testing</h3>
+            <h3 class="heading">Javascript</h3>
+            <h3 class="heading">PHP - laravel</h3>
           </div>
         </div>    
       </div>
@@ -125,8 +130,8 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-5">
       <div class="col-md-7 text-center heading-section ftco-animate">
-        <span>Portfolio</span>
-        <h2>Checkout a few of my works</h2>
+        <span>Portafolio</span>
+        <h2>Revisa los proyectos que he realizado</h2>
       </div>
     </div>
     <div class="row no-gutters">
@@ -152,7 +157,7 @@
         <h4 class="subheading">{{$project->category}}</h4>
         <h2 class="heading"><a href="portfolio-single.html">{{$project->title}}</a></h2>
         <p>{{Str::limit($project->body,'50','...')}}</p>
-        <p><a href="{{route('project',$project->id)}}">View Project</a></p>
+        <p><a href="{{route('project',$project->id)}}">Mirar proyecto</a></p>
       </div>
     </div>
     
@@ -169,40 +174,31 @@
   <div class="container">
     <div class="row justify-content-center mb-5 pb-5">
       <div class="col-md-7 text-center heading-section ftco-animate">
-        <span>Portfolio</span>
-        <h2>I love to share my achievements</h2>
-      </div>
-    </div>
-    <div class="row d-flex justify-content-start">
-      <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
-        <div class="block-18">
-          <div class="text">
-            <span class="ftco-label">Clients</span>
-            <strong class="number" data-number="420">0</strong>
-          </div>
-        </div>
+        <span>Portafolio</span>
+        <h2>Me gusta compartir mis progresos</h2>
       </div>
     </div>
     <div class="row d-flex justify-content-center">
       <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
         <div class="block-18">
           <div class="text">
-            <span class="ftco-label">Project done</span>
-            <strong class="number" data-number="890">0</strong>
+            <span class="ftco-label">Clientes</span>
+            <strong class="number" data-number="3">0</strong>
           </div>
         </div>
       </div>
     </div>
     <div class="row d-flex justify-content-end">
-      <div class="col-md-5 counter-wrap ftco-animate">
+      <div class="col-md-5 col-sm-5 counter-wrap ftco-animate">
         <div class="block-18">
           <div class="text">
-            <span class="ftco-label">Cups of coffee</span>
-            <strong class="number" data-number="1000">0</strong>
+            <span class="ftco-label">Proyectos realizados</span>
+            <strong class="number" data-number="10">0</strong>
           </div>
         </div>
       </div>
     </div>
+    
   </div>
 </section>
 @endsection
