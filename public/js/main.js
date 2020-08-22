@@ -4,7 +4,14 @@
  });
 
 $(document).ready(function($) {
-
+	
+	$('li.active').removeClass('active');
+	var path = window.location.href; // because the 'href' property of the DOM element is the absolute path
+    $('.navbar-nav  a').each(function() {
+		if (this.href === path) {
+	    	$(this).parent().addClass('active');
+      	}
+    });
 	"use strict";
 
 	$(window).stellar({

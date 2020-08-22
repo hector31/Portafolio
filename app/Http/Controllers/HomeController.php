@@ -37,7 +37,8 @@ class HomeController extends Controller
     }
     public function show_portfolio()
     {
-        return view('components.home.portfolio-projects');
+        $projects= Project::paginate(5);
+        return view('components.home.portfolio-projects',['projects'=>$projects]);
     }
     public function show_contact()
     {

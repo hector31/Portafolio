@@ -95,9 +95,9 @@
           <div class="icon mb-3"><span class="icon-layers"></span></div>
           <div class="media-body">
             <h3 class="heading">Frontend</h3>
-            <h3 class="heading">Diseño de paginas web</h3>
-            <h3 class="heading">Diseño de aplicaciones de escritorio</h3>
-            <h3 class="heading">Diseño de aplicaciones moviles</h3>
+            <h3 class="heading">Desarrollo de paginas web</h3>
+            <h3 class="heading">Desarrollo de aplicaciones de escritorio</h3>
+            <h3 class="heading">Desarrollo de aplicaciones moviles</h3>
             <h3 class="heading">Diseño Responsive</h3>
           </div>
         </div>      

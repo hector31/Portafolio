@@ -52,7 +52,7 @@
         <div class="row no-gutters">
           <div class="col-md-12 text-center">
             <h1 class="mb-4"><a href="{{route('home')}}" class="logo">Hector Narvaez</a></h1>
-            <ul>
+            <ul class="navbar-nav">
               <li class="active"><a href="{{route('home')}}"><span><small>01</small>Inicio</span></a></li>
               <li><a href="{{route('resume')}}"><span><small>02</small>Hoja de Vida</span></a></li>
               <li><a href="{{route('services')}}"><span><small>03</small>Servicios</span></a></li>
@@ -135,7 +135,7 @@
     </div>
 
   </div>
-
+ 
 
   <script src={{asset("js/jquery.min.js")}}></script>
   <script src={{asset("js/jquery-migrate-3.0.1.min.js")}}></script>
