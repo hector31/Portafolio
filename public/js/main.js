@@ -11,7 +11,9 @@ $(document).ready(function($) {
 		if (this.href === path) {
 	    	$(this).parent().addClass('active');
       	}
-    });
+	});
+	
+
 	"use strict";
 
 	$(window).stellar({

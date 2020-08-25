@@ -31,7 +31,7 @@
     <div class="container">
       <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
         <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
-          <p><a href="#" class="scroll">Soy ingeniero Electronico</a></p>
+          <p><a href="#" class="scroll">Estudiante de Ingenieria Electronica</a></p>
           <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">Desarrollador android</h1>
         </div>
       </div>
@@ -43,7 +43,7 @@
       <div class="row slider-text align-items-center text-center justify-content-center" data-scrollax-parent="true">
         <div class="col-md-12 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
           <p><a href="#" class="scroll">Me apasiona la programacion</a></p>
-          <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">Automatizacion y IoT</h1>
+          <h1 class="mb-3" data-scrollax="properties: {translateY: '30%', opacity: 1.6}">Automatizacion y Domotica</h1>
         </div>
       </div>
     </div>
@@ -61,7 +61,7 @@
           <h1 class="bold-text">Sobre Mi</h1>
           <div class="p-5">
             <h2 class="mb-5">Hola! Hola mi nombre es Hector Narvaez</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in.</p>
+            <p>Soy un desarrollador web fullstack, creo paginas interactivas que pueden ser multiplaforma web, movil y de escritorio, tambien me gusta mucho la automatizacion de procesos en la industria y ademas la domotica con la implementacion de sensores, el control de la iluminacion, temperatura, camaras y seguridad, tengo conocimientos avanzados en electronica que me ayudan a crear estos desarrollos.</p>
             <p><a href="#">Revisa mi hoja de vida</a></p>
             <ul class="ftco-footer-social list-unstyled mt-4">
               <li><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
@@ -104,7 +104,7 @@
       </div>
       <div class="col-md-4 d-flex align-self-stretch ftco-animate">
         <div class="media block-6 services p-3 py-4 d-block text-center">
-          <div class="icon mb-3"><span class="icon-gears"></span></div>
+          <div class="icon mb-3"><span class="icon-database"></span></div>
           <div class="media-body">
             <h3 class="heading">Backend</h3>
             <h3 class="heading">Diseño de bases de datos</h3>
@@ -119,9 +119,25 @@
             <h3 class="heading">HTML/CSS</h3>
             <h3 class="heading">Javascript</h3>
             <h3 class="heading">PHP - laravel</h3>
+            <h3 class="heading">Java</h3>
+            <h3 class="heading">Kotlin</h3>
           </div>
         </div>    
       </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+        <div class="media block-6 services p-3 py-4 d-block text-center">
+          <div class="icon mb-3"><span class="icon-gears"></span></div>
+          <div class="media-body">
+            <h3 class="heading">Automatizacion de procesos</h3>
+            <h3 class="heading">Domotica</h3>
+            <h3 class="heading">Proyectos de electronica</h3>
+          </div>
+        </div>      
+      </div>
+     
     </div>
   </div>
 </section>
@@ -156,7 +172,7 @@
       @endif
         <h4 class="subheading">{{$project->category}}</h4>
         <h2 class="heading"><a href="portfolio-single.html">{{$project->title}}</a></h2>
-        <p>{{Str::limit($project->body,'50','...')}}</p>
+        <p>{{Str::limit($project->body,'100','...')}}</p>
         <p><a href="{{route('project',$project->id)}}">Mirar proyecto</a></p>
       </div>
     </div>

@@ -8528,7 +8528,8 @@ textarea.form-control {
   margin-bottom: 0; }
 
 .block-3 .image {
-  background-size: cover;
+  /* background-size: cover; */
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat; }
   @media (max-width: 767.98px) {
@@ -8751,7 +8752,28 @@ textarea.form-control {
   -webkit-animation: loader-dash 1.5s ease-in-out infinite;
   animation: loader-dash 1.5s ease-in-out infinite;
   stroke-linecap: round; }
-
+  .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+    /* margin:20px; */
+}
+.video-responsive iframe{
+    left:auto;
+    top:0;
+    height:70%;
+    width:70%;
+    position:absolute;
+}
+.espacio-div{
+  margin-top:40px;
+  margin-bottom: 40px;
+}
+.img-post{
+  width: 90%;
+  /* height: 400px; */
+}
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
@@ -8801,6 +8823,20 @@ textarea.form-control {
           font-size: 25px;
       }
       }
+      @media (max-width: 570px) {
+        .text-post-only p,h4,h2{
+          align-content: center;
+          text-align: center;
+        }
+        .video-responsive iframe{
+          left:0;
+          top:0;
+          height:100%;
+          width:100%;
+          position:absolute;
+      }
+  
+      }
       @media (max-width: 435px) {
         .owl-carousel.home-slider .slider-item .slider-text h1 {
           font-size: 25px;
@@ -8808,6 +8844,7 @@ textarea.form-control {
         .ftco-footer .ftco-footer-widget .email a {
           font-size: 20px;
       }
+      
     }
       @media (max-width: 387px) {
         .owl-carousel.home-slider .slider-item .slider-text h1 {
@@ -8827,13 +8864,17 @@ textarea.form-control {
           width: 360px; 
         } 
         .owl-carousel.home-slider .slider-item .slider-text p a.scroll {
-          font-size:0.65em;
+          font-size:1.5em;
+           letter-spacing: 2px;
         }
         .owl-carousel.home-slider .slider-item .slider-text h1 {
-          font-size: 0.5em;
+          font-size: 1.4em;
+          letter-spacing: 2px;
+        
         }
         header .colorlib-navbar-brand .colorlib-logo {
-          font-size: 0.6em;
+          font-size: 0.8em;
+          letter-spacing: 5px;
         }
         .ftco-footer .ftco-footer-widget .email a {
           font-size: 0.6em;
@@ -8841,5 +8882,8 @@ textarea.form-control {
       .correom{
         font-size: 0.9em;
       }
+      
+    
+      
     }
     }

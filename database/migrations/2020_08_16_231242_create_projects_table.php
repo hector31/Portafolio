@@ -17,8 +17,11 @@ class CreateProjectsTable extends Migration
             $table->id();
             $table->string('category');
             $table->string('title');
-            $table->text('post_image')->nullable();
+            $table->text('post_image')->required();
+            $table->text('post_second_image')->nullable();
             $table->text('body');
+            $table->string('link')->nullable();
+            $table->string('video')->nullable();
             $table->timestamps();
         });
     }

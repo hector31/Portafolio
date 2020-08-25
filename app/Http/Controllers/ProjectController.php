@@ -32,10 +32,17 @@ class ProjectController extends Controller
             'title'=>'required|min:4|max:255',
             'category'=>'required',
             'post_image'=>'file',
-            'body'=>'required'
+            'post_second_image'=>'file',
+            'body'=>'required',
+            'link'=>'nullable',
+            'video'=>'nullable'
+
         ]);
         if(request('post_image')){
             $inputs['post_image']=request('post_image')->store('images');
+        }
+        if(request('post_second_image')){
+            $inputs['post_second_image']=request('post_second_image')->store('images');
         }
 
         $project = Project::create($inputs);
@@ -62,15 +69,24 @@ class ProjectController extends Controller
             'category'=>'required',
             // 'project_image'=>'mimems:jpeg,bmp,png',//si se quiere solo cierto tipo de documentos a subir
             'post_image'=>'file',//admite todos los documentos pdf imagenes etc
-            'body'=>'required'
+            'post_second_image'=>'file',
+            'body'=>'required',
+            'link'=>'nullable',
+            'video'=>'nullable'
         ]);
         if(request('post_image')){
             $inputs['post_image']=request('post_image')->store('images');
             $project->post_image=$inputs['post_image'];
         }
+        if(request('post_second_image')){
+            $inputs['post_second_image']=request('post_second_image')->store('images');
+            $project->post_second_image=$inputs['post_second_image'];
+        }
         $project->title=$inputs['title'];
         $project->category=$inputs['category'];
         $project->body=$inputs['body'];
+        $project->link=$inputs['link'];
+        $project->video=$inputs['video'];
 
         // $this->authorize('update',$project);
         $project->update();
