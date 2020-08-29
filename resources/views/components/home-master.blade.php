@@ -47,7 +47,7 @@
   <nav id="colorlib-main-nav" role="navigation">
     <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></a>
     <div class="js-fullheight colorlib-table">
-      <div class="img" style="background-image: url(images/foto_perfil.jpg);"></div>
+      <div class="img" style="background-image: url(images/foto_perfil4.jpg);"></div>
       <div class="colorlib-table-cell js-fullheight">
         <div class="row no-gutters">
           <div class="col-md-12 text-center">
@@ -85,7 +85,7 @@
         <div class="row">
           <div class="col-md-12">
             <div class="colorlib-navbar-brand">
-              <a class="colorlib-logo" href="{{route('home')}}"><span class="logo-img" style="background-image: url(images/foto_perfil2.jpg);"></span>Hector Narvaez</a>
+              <a class="colorlib-logo" href="{{route('home')}}"><span class="logo-img" style="background-image: url(images/logo_hn3.png);"></span>Hector Narvaez</a>
             </div>
             <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
           </div>
@@ -107,7 +107,6 @@
               <ul class="ftco-footer-social list-unstyled">
                 <li class="ftco-animate"><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
-                <li class="ftco-animate"><a href="https://www.instagram.com/hector_.31/"><span class="icon-instagram"></span></a></li>
                 <li class="ftco-animate"><a href="https://www.linkedin.com/in/hector-eduardo-narvaez-pantoja-40a415a0/"><span class="icon-linkedin"></span></a></li>
                 <li class="ftco-animate"><a href="https://github.com/hector31"><span class="icon-github"></span></a></li>
               </ul>

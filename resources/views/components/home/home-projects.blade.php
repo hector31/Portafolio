@@ -54,7 +54,7 @@
 <section class="ftco-section about-section">
   <div class="container">
     <div class="row d-flex" data-scrollax-parent="true">
-      <div class="col-md-4 author-img" style="background-image: url(images/foto_perfil.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
+      <div class="col-md-4 author-img" style="background-image: url(images/foto_perfil5.jpg);" data-scrollax=" properties: { translateY: '-70%'}"></div>
       <div class="col-md-2 espacio-presentacion"></div>
       <div class="col-md-6 wrap ftco-animate">
         <div class="about-desc">
@@ -66,7 +66,6 @@
             <ul class="ftco-footer-social list-unstyled mt-4">
               <li><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
               <li><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
-              <li><a href="https://www.instagram.com/hector_.31/"><span class="icon-instagram"></span></a></li>
               <li><a href="https://www.linkedin.com/in/hector-eduardo-narvaez-pantoja-40a415a0/"><span class="icon-linkedin"></span></a></li>
               <li><a href="https://github.com/hector31"><span class="icon-github"></span></a></li>
               
