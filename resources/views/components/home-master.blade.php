@@ -54,7 +54,7 @@
             <h1 class="mb-4"><a href="{{route('home')}}" class="logo">Hector Narvaez</a></h1>
             <ul class="navbar-nav">
               <li class="active"><a href="{{route('home')}}"><span><small>01</small>Inicio</span></a></li>
-              <li><a href="{{route('resume')}}"><span><small>02</small>Hoja de Vida</span></a></li>
+              <li><a href="{{route('resume')}}"><span><small>02</small>Sobre Mi</span></a></li>
               <li><a href="{{route('services')}}"><span><small>03</small>Servicios</span></a></li>
               <li><a href="{{route('portfolio')}}"><span><small>04</small>Portafolio</span></a></li>
               {{-- <li><a href="blog.html"><span><small>05</small>Blog</span></a></li> --}}

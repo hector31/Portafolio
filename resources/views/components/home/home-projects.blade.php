@@ -61,8 +61,8 @@
           <h1 class="bold-text">Sobre Mi</h1>
           <div class="p-5">
             <h2 class="mb-5">Hola! Hola mi nombre es Hector Narvaez</h2>
-            <p>Soy un desarrollador web fullstack, creo paginas interactivas que pueden ser multiplaforma web, movil y de escritorio, tambien me gusta mucho la automatizacion de procesos en la industria y ademas la domotica con la implementacion de sensores, el control de la iluminacion, temperatura, camaras y seguridad, tengo conocimientos avanzados en electronica que me ayudan a crear estos desarrollos.</p>
-            <p><a href="#">Revisa mi hoja de vida</a></p>
+            <p class="justificar">Soy un desarrollador web fullstack, creo paginas interactivas que pueden ser multiplaforma web, movil y de escritorio, tambien me gusta mucho la automatizacion de procesos en la industria y ademas la domotica con la implementacion de sensores, el control de la iluminacion, temperatura, camaras y seguridad, tengo conocimientos avanzados en electronica que me ayudan a crear estos desarrollos.</p>
+            {{-- <p><a href="#">Revisa mi hoja de vida</a></p> --}}
             <ul class="ftco-footer-social list-unstyled mt-4">
               <li><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
               <li><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
@@ -156,9 +156,9 @@
 
     <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
       @if ($countP%2==0)
-      <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">          
+      <a href="{{route('project',$project->id)}}" class="image d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">          
       @else
-      <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">
+      <a href="{{route('project',$project->id)}}" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">
       @endif
         <div class="icon d-flex text-center justify-content-center align-items-center">
           <span class="icon-search"></span>
@@ -170,8 +170,8 @@
       <div class="text order-1">
       @endif
         <h4 class="subheading">{{$project->category}}</h4>
-        <h2 class="heading"><a href="portfolio-single.html">{{$project->title}}</a></h2>
-        <p>{{Str::limit($project->body,'100','...')}}</p>
+        <h2 class="heading"><a href="{{route('project',$project->id)}}">{{$project->title}}</a></h2>
+        <p class="justificar">{{Str::limit($project->body,'120','...')}}</p>
         <p><a href="{{route('project',$project->id)}}">Mirar proyecto</a></p>
       </div>
     </div>
@@ -198,7 +198,7 @@
         <div class="block-18">
           <div class="text">
             <span class="ftco-label">Clientes</span>
-            <strong class="number" data-number="3">0</strong>
+            <strong class="number" data-number="9">0</strong>
           </div>
         </div>
       </div>
@@ -208,7 +208,7 @@
         <div class="block-18">
           <div class="text">
             <span class="ftco-label">Proyectos realizados</span>
-            <strong class="number" data-number="10">0</strong>
+            <strong class="number" data-number="16">0</strong>
           </div>
         </div>
       </div>

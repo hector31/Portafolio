@@ -8774,6 +8774,15 @@ textarea.form-control {
   width: 90%;
   /* height: 400px; */
 }
+.justificar{
+  text-align:justify;
+	text-justify:inter-word;
+}
+header{
+  position:fixed;
+  background: #121212;
+  padding: 26px;
+}
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);

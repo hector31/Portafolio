@@ -10,8 +10,8 @@
                 <h1 class="bold-text">Sobre mi</h1>
                 <div class="p-5">
                   <h2 class="mb-5">Hola! Soy Hector Narvaez</h2>
-                  <p>Soy de Túquerres, Nariño en Colombia me apasiona la programacion y la electronica, me gusta hacer cosas interesantes que me reten, con soluciones creativas, eficientes y faciles de usar, prestando atencion a los pequeños detalles llevo acabo todos mis proyectos.</p>
-                  <p><a href="#">Revisa mi hoja de vida</a></p>
+                  <p class="justificar">Soy de Colombia naci en Túquerres, Nariño me apasiona la programacion y la electronica, me gusta hacer cosas interesantes que me reten y enfrentarlas con soluciones creativas, eficientes y faciles de usar, prestando atencion a los pequeños detalles llevo acabo todos mis proyectos.</p>
+                  {{-- <p><a href="#">Revisa mi hoja de vida</a></p> --}}
                   <ul class="ftco-footer-social list-unstyled mt-4">
                     <li><a href="https://twitter.com/hectorn3131"><span class="icon-twitter"></span></a></li>
                     <li><a href="https://www.facebook.com/hector.narvaez.397"><span class="icon-facebook"></span></a></li>
@@ -30,8 +30,8 @@
           	<div class="col-md-10">
           		<div class="profile ftco-animate">
 	          		<h2 class="mb-4">Perfil</h2>
-	          		<h4 class="mb-4">Soy un desarrollador fullastack, tambien me gusta mucho la automatizacion en la industria y la domotica, soy de Nariño, Colombia. Mi objetivo es diferenciarme a traves de soluciones creativas.</h4>
-                    <p>Soy un desarrollador web fullstack, creo paginas interactivas que pueden ser multiplaforma web, movil y de escritorio, tambien me gusta mucho la automatizacion de procesos en la industria y ademas la domotica con la implementacion de sensores, el control de la iluminacion, temperatura, camaras y seguridad, tengo conocimientos avanzados en electronica que me ayudan a crear estos desarrollos.</p>
+	          		<h4 class="mb-4">Soy un desarrollador Full-Stack, tambien me gusta mucho la automatizacion en la industria y la domotica. Mi objetivo es diferenciarme a traves de soluciones creativas.</h4>
+                    <p class="justificar">Soy un desarrollador web fullstack, creo paginas interactivas que pueden ser multiplaforma: web, movil y de escritorio, tambien me gusta mucho la automatizacion de procesos en la industria y ademas la domotica con la implementacion de sensores, el control de la iluminacion, temperatura, camaras y seguridad, tengo conocimientos avanzados en electronica que me ayudan a crear estos desarrollos.</p>
 	          		<div class="row my-5">
 		          		<div class="col-md-6">
 		          			<p><strong>Nombre:</strong> <span>Hector Eduardo Narvaez</span></p>

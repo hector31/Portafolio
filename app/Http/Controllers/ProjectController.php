@@ -76,7 +76,7 @@ class ProjectController extends Controller
         ]);
         if(request('post_image')){
             $inputs['post_image']=request('post_image')->store('images');
-            $project->post_image=$inputs['post_image'];
+        
         }
         if(request('post_second_image')){
             $inputs['post_second_image']=request('post_second_image')->store('images');
