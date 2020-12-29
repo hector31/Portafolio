@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Project;
 use Illuminate\Http\Request;
+use App\Mail\ContactaMeMailable;
+use Illuminate\Support\Facades\Mail;
 
 class HomeController extends Controller
 {
@@ -43,5 +45,19 @@ class HomeController extends Controller
     public function show_contact()
     {
         return view('components.home.contact-projects');
+    }
+    public function send_email(Request $request){
+
+        $request->validate([
+            'name'=> 'required',
+            'correo'=>'required|email',
+            'asunto'=>'required',
+            'mensaje'=>'required'
+
+        ]);
+
+        $correo=new ContactaMeMailable($request->all());
+        Mail::to('inghectornarvaezdesarrollos@gmail.com')->send($correo);
+        return redirect()->route('contact')->with('info','Mensaje Enviado');
     }
 }

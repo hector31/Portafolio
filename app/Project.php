@@ -25,7 +25,7 @@ class Project extends Model
         if (strpos($value, 'https://') !== FALSE || strpos($value, 'http://') !== FALSE) {
             return $value;
         }
-     
+        
         return asset('storage/' . $value);
     }
     }

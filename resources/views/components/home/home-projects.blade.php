@@ -151,7 +151,7 @@
     </div>
     <div class="row no-gutters">
 
-@foreach ($projects as $countP=>$project)
+    @foreach ($projects as $countP=>$project)
     
 
     <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">

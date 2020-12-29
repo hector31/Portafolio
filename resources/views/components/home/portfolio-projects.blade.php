@@ -13,27 +13,27 @@
       @foreach ($projects as $countP=>$project)
           
       
-          <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
-            @if ($countP%2==0)
-            <a href="portfolio-single.html" class="image d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">          
-            @else
-            <a href="portfolio-single.html" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">
-            @endif
-              <div class="icon d-flex text-center justify-content-center align-items-center">
-                <span class="icon-search"></span>
-              </div>
-            </a>
-            @if ($countP%2==0)
-            <div class="text">
-            @else
-            <div class="text order-1">
-            @endif
-              <h4 class="subheading">{{$project->category}}</h4>
-              <h2 class="heading"><a href="portfolio-single.html">{{$project->title}}</a></h2>
-              <p>{{Str::limit($project->body,'50','...')}}</p>
-              <p><a href="{{route('project',$project->id)}}">Mirar proyecto</a></p>
-            </div>
+      <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+        @if ($countP%2==0)
+        <a href="{{route('project',$project->id)}}" class="image d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">          
+        @else
+        <a href="{{route('project',$project->id)}}" class="image order-2 d-flex justify-content-center align-items-center" style="background-image: url({{$project->post_image}}); " data-scrollax=" properties: { translateY: '-30%'}">
+        @endif
+          <div class="icon d-flex text-center justify-content-center align-items-center">
+            <span class="icon-search"></span>
           </div>
+        </a>
+        @if ($countP%2==0)
+        <div class="text">
+        @else
+        <div class="text order-1">
+        @endif
+          <h4 class="subheading">{{$project->category}}</h4>
+          <h2 class="heading"><a href="{{route('project',$project->id)}}">{{$project->title}}</a></h2>
+          <p class="justificar">{{Str::limit($project->body,'120','...')}}</p>
+          <p><a href="{{route('project',$project->id)}}">Mirar proyecto</a></p>
+        </div>
+      </div>
           
           @endforeach
         </div>
